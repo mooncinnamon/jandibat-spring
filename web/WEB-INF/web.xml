@@ -3,13 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-
-
-
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <!--<param-value>/WEB-INF/applicationContext.xml</param-value>-->
-        <param-value>AppConfig</param-value>
+        <param-value>/WEB-INF/applicationContext.xml</param-value>
     </context-param>
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -21,10 +17,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
-        <url-pattern>/</url-pattern> <!-- *.form -> / 바꾸기-->
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
-    <context-param>
-        <param-name>contextClass</param-name>
-        <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
-    </context-param>
 </web-app>
