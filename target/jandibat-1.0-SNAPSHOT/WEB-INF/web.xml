@@ -17,7 +17,7 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>moon.cinnamon.jandibat.Config.AppConfig</param-value>
+        <param-value>Config.AppConfig</param-value>
     </context-param>
 
     <servlet>
@@ -29,7 +29,7 @@
         </init-param>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>moon.cinnamon.jandibat.Config.WebMvcConfig</param-value>
+            <param-value>Config.WebMvcConfig</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
